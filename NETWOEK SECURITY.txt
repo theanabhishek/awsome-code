@@ -1,0 +1,56 @@
+SIX WAYS TO SECURE OUR NETWORK
+
+The days of just installing a firewall and saying you are secure are long gone. Today’s attacks are much more advanced, and exploits are shared almost instantaneously due to the global culture we live in.
+
+Network security should be on the mind of every business decision maker. Doesn't it feel like there is a front page headline of a security breach every month these days? A kind of breach that has leaked sensitive customer data, causing the compromised company to scramble as they attempt to minimize the disaster. This places a huge risk on the company's financial liability. Customers may even choose to walk away from these companies due to the loss of trust.
+
+Thankfully, some industries have adopted standards around information security (HIPAA, PCI) which companies must meet. Companies should ask themselves, is our security strategy in place just so we can check a box at audit time, or do we really have an understanding of our potential risks?
+
+The list below is by no means all inclusive, but does focus on some of the main network security appliances that all businesses should be investigating:
+
+1. Firewall
+
+Firewalls are the origin of network security, and they are absolutely still required for a solid security plan. Best practice is to allow only required network access and block all other connection attempts. This limits your exposure risk and prevents non-critical ports from being used for malicious purposes.
+
+There are two key areas that firewalls should be planned for:
+
+Internet Edge: You should only allow inbound access from the Internet to specifically defined services in your DMZ. If external users only need port 80/443 for your webserver, your firewall should be blocking all other ports. These firewalls should also be configured to allow internal users limited access leaving the company. If your AUP (acceptable use policy) states that bit torrent applications are not allowed, you should be blocking that traffic using port numbers or application rules on next generation firewalls.
+
+Data Center Access: Internal users should not have open access to all of your critical servers, and arguably, should be trusted little more than external Internet users. To be safe, you should only provide users the required access to services hosted in your data center, and block all other traffic.
+
+
+2. Intrusion Prevention (IPS)
+
+You have locked down network access "in" and "out" of specific areas using firewalls, but you are still vulnerable on the applications you allow on your network. An IPS takes a deeper look into the network traffic and analyzes the content to determine if there are malicious activities taking place. Most IPS appliances are based upon a library of known attacks, and compare your traffic against these signatures. It is important to maintain an active subscription on your IPS to have access to the latest signatures.
+
+A network can have IPS appliances installed at various locations on the network. Since this security appliance is relying on seeing traffic in order to perform its function, it is only as good as where it is positioned in your network design.
+
+The most common places that an IPS is installed is on the Internet edge and within the data center.
+
+
+3. Malware Detection/Prevention 
+
+Malware is the mechanism that allows most of the current day attacks to happen. Once an internal machine is infected with malware, it opens up a back door into the company which can bypass all of your other security measures. Malware needs to be detected prior to infecting a machine, if possible. If a machine is infected, it is critical to understand the cause, and what the machine has done since that point. There must be a mechanism in place to classify new malware, and stop its spread within your environment.
+
+Malware Prevention can be network based, end-point based, or a mix of the two.
+
+Network Based Malware Prevention: This appliance inspects traffic crossing your network and can block known malware. The appliance needs to see the network traffic, so its position on the network is critical. It is commonly seen on the Internet edge, and also within the data center.
+
+End-point based Malware Prevention: This is software installed on the end-point which can view traffic to and from the machine. It blocks known malware from being run and also tracks what unknown applications do to the system. If the unknown application is later classified as malware, you have an understanding of what the malicious code has done, which will be helpful in remediating the machine.
+
+
+4. 802.1x Authentication
+
+Most organizations have secured their wireless networks, but still allow you to walk into a conference room, plug into a RJ45 jack, and gain full access into their network. 802.1X allows you to ask the user for credentials prior to allowing them onto your wireless and/or wired network. You can then give granular permission and allow only access to specific network resources based on user attributes (such as active directory group membership).
+
+
+5. Web-Filtering
+
+There are multiple reasons to block certain websites, but in terms of network security, it is critical to prevent access to malicious websites. Users can inadvertently enter information into a known malicious website which exposes themselves and/or the company to fraud. They can download malware or malicious programs which opens the organization up to additional risk.
+
+
+6. Spam Filtering
+
+The amount of spam emails on the Internet is almost mind-boggling, sitting around 70% of all emails across the globe. While it is nice to rid your inbox of these nuisance emails, there are real security risks in play when they do get through. Certain spam emails are designed to look legitimate, but are “phishing” for users to click on their links and enter personal data about themselves or the organization. These spam messages are another easy way for malware to make its way into the organization.
+
+Network security will never be a “set it and forget it” function of the organization, and companies need to continuously adapt to the ever-evolving hacker. The best chance that an organization has to protect itself is through a methodology of layered security, using multiple security applications. 
